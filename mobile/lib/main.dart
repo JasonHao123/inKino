@@ -13,11 +13,12 @@ import 'package:redux/redux.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   final prefs = await SharedPreferences.getInstance();
   final keyValueStore = FlutterKeyValueStore(prefs);
   final store = createStore(Client(), keyValueStore);
 
-  FinnkinoApi.useFinnish = ui.window.locale.languageCode == 'fi';
+  FinnkinoApi.useFinnish =  false;
   runApp(InKinoApp(store));
 }
 

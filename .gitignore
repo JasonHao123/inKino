@@ -41,3 +41,11 @@ build/
 .DS_Store
 
 core/lib/src/tmdb_config.dart
+mobile/ios/Podfile.lock
+mobile/ios/Podfile.lock
+mobile/ios/.symlinks/flutter
+mobile/ios/.symlinks/plugins/key_value_store_flutter
+mobile/ios/.symlinks/plugins/path_provider
+mobile/ios/.symlinks/plugins/shared_preferences
+mobile/ios/.symlinks/plugins/url_launcher
+mobile/.flutter-plugins-dependencies
